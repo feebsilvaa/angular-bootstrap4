@@ -1,0 +1,27 @@
+
+<div class="container header">
+
+  <h1>Property Binding</h1>
+
+  <div class="alert alert-success" role="alert">
+    Funcionário adicionado: <strong>{{ nome }}</strong>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label for="nomeFuncionario">Nome</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        id="nomeFuncionario" 
+        (input)="alterarNome($event)" 
+        [value]="nome"
+        #nomeFuncionario>
+    </div>
+    <button 
+      type="submit" 
+      class="btn btn-primary" 
+      [disabled]="nome.length === 0"
+      (click)="adicionar(nomeFuncionario.value)">Adicionar</button>
+  </form>
+</div>

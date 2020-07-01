@@ -1,0 +1,21 @@
+
+<div class="container header">
+  <div class="alert alert-success" role="alert">
+    Funcionário adicionado: <strong>{{ nome }}</strong>
+  </div>
+
+  <form #f>
+    <div class="form-group">
+      <label for="nomeFuncionario">Nome</label>
+      <input 
+        type="text" 
+        class="form-control" 
+        id="nomeFuncionario" 
+        #nomeFuncionario 
+        (input)="alterarNome($event)" 
+        required>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="adicionar(nomeFuncionario.value)">Adicionar</button>
+  </form>
+  {{ nomeFuncionario.value }}
+</div>
