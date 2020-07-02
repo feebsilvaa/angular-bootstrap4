@@ -11,6 +11,9 @@ import { EventBindingExampleComponent } from './event-binding-example/event-bind
 import { TemplateReferenceVariablesExampleComponent } from './template-reference-variables-example/template-reference-variables-example.component';
 import { PropertyBindingExampleComponent } from './property-binding-example/property-binding-example.component';
 import { TwoWayDataBindingExampleComponent } from './two-way-data-binding-example/two-way-data-binding-example.component';
+import { NgforExampleComponent } from './ngfor-example/ngfor-example.component';
+import { BindingCustomizadoInputExampleComponent } from './binding-customizado-input-example/binding-customizado-input-example.component';
+import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { TwoWayDataBindingExampleComponent } from './two-way-data-binding-exampl
     EventBindingExampleComponent,
     TemplateReferenceVariablesExampleComponent,
     PropertyBindingExampleComponent,
-    TwoWayDataBindingExampleComponent
+    TwoWayDataBindingExampleComponent,
+    NgforExampleComponent,
+    BindingCustomizadoInputExampleComponent,
+    FuncionarioCardComponent
   ],
   imports: [
     BrowserModule,

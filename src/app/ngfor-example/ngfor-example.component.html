@@ -1,13 +1,10 @@
 
 <div class="container header">
 
-  <h1>Two Way Data Binding</h1>
+  <h1>Ng For</h1>
 
   <div *ngIf="adicionado" class="alert alert-success" role="alert">
-    ngIf - Funcionário adicionado: <strong>{{ nome }}</strong>
-  </div>
-  <div [hidden]="!adicionado" class="alert alert-success" role="alert">
-    hidden - Funcionário adicionado: <strong>{{ nome }}</strong>
+    Funcionário adicionado: <strong>{{ nome }}</strong>
   </div>
 
   <form>
@@ -28,4 +25,17 @@
       [disabled]="nome.length === 0"
       (click)="adicionar(nomeFuncionario.value)">Adicionar</button>
   </form>
+</div>
+<br> 
+<div class="container">
+  <div class="row">
+    <div class="col-2" *ngFor="let funcionario of funcionarios">
+      <div class="card funcionario-card">
+        <img src="https://randomuser.me/api/portraits/men/{{funcionario.id}}.jpg" class="card-img-top" alt="{{funcionario.nome}}">
+        <div class="card-body">
+          <h5 class="card-title">{{funcionario.nome}}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

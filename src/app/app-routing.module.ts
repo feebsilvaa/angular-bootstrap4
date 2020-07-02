@@ -6,6 +6,8 @@ import { EventBindingExampleComponent } from './event-binding-example/event-bind
 import { TemplateReferenceVariablesExampleComponent } from './template-reference-variables-example/template-reference-variables-example.component';
 import { PropertyBindingExampleComponent } from './property-binding-example/property-binding-example.component';
 import { TwoWayDataBindingExampleComponent } from './two-way-data-binding-example/two-way-data-binding-example.component';
+import { NgforExampleComponent } from './ngfor-example/ngfor-example.component';
+import { BindingCustomizadoInputExampleComponent } from './binding-customizado-input-example/binding-customizado-input-example.component';
 
 
 const routes: Routes = [
@@ -16,6 +18,8 @@ const routes: Routes = [
   { path: 'template-reference-variables', component: TemplateReferenceVariablesExampleComponent },
   { path: 'property-binding', component: PropertyBindingExampleComponent },
   { path: 'two-way-data-binding', component: TwoWayDataBindingExampleComponent },
+  { path: 'ng-for-example', component: NgforExampleComponent },
+  { path: 'binding-customizado-input', component: BindingCustomizadoInputExampleComponent },
 ];
 
 @NgModule({

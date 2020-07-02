@@ -1,0 +1,31 @@
+<div class="container header">
+
+  <h1>Binding Customizado @Input</h1>
+
+  <div *ngIf="adicionado" class="alert alert-success" role="alert">
+    Funcionário adicionado: <strong>{{ nome }}</strong>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label for="nomeFuncionario">Nome</label>
+      <input type="text" class="form-control" id="nomeFuncionario" name="nome" [(ngModel)]="nome"
+        (focus)="adicionado = false" #nomeFuncionario>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="nome.length === 0"
+      (click)="adicionar(nomeFuncionario.value)">Adicionar</button>
+  </form>
+</div>
+<br>
+<div class="container lista-funcionarios">
+  <div class="row controles">
+    <button type="submit" class="btn btn-primary" 
+      [disabled]="funcionarios.length === 0" 
+      (click)="limparLista()">Limpar Lista</button>
+  </div>
+  <div class="row">
+    <div class="col-2" *ngFor="let func of funcionarios">
+      <app-funcionario-card [func-prop]="func"></app-funcionario-card>
+    </div>
+  </div>
+</div>

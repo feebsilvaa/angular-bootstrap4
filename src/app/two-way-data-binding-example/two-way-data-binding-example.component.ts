@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TwoWayDataBindingExampleComponent implements OnInit {
 
   nome: string = 'Fernando';
+  adicionado: boolean = false;
 
   constructor() { }
 
@@ -17,6 +18,7 @@ export class TwoWayDataBindingExampleComponent implements OnInit {
   adicionar(nome: string) {
     console.log(nome);    
     this.nome = nome;
+    this.adicionado = true;
   }
 
 }
