@@ -1,0 +1,17 @@
+<div class="container header">
+  <h1>Binding Customizado de Eventos (@Output e EventEmitter)</h1>
+  <app-funcionario-form (funcionarioAdicionado)="onAdicionarFuncionario($event)"></app-funcionario-form>
+</div>
+<br>
+<div class="container lista-funcionarios">
+  <div class="row controles">
+    <button type="submit" class="btn btn-primary" 
+      [disabled]="funcionarios.length === 0" 
+      (click)="limparLista()">Limpar Lista</button>
+  </div>
+  <div class="row">
+    <div class="col-2" *ngFor="let func of funcionarios">
+      <app-funcionario-card [func-prop]="func"></app-funcionario-card>
+    </div>
+  </div>
+</div>

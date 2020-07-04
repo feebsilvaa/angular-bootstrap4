@@ -14,6 +14,8 @@ import { TwoWayDataBindingExampleComponent } from './two-way-data-binding-exampl
 import { NgforExampleComponent } from './ngfor-example/ngfor-example.component';
 import { BindingCustomizadoInputExampleComponent } from './binding-customizado-input-example/binding-customizado-input-example.component';
 import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.component';
+import { BindingCustomizadoEventosExampleComponent } from './binding-customizado-eventos-example/binding-customizado-eventos-example.component';
+import { FuncionarioFormComponent } from './funcionario-form/funcionario-form.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FuncionarioCardComponent } from './funcionario-card/funcionario-card.co
     TwoWayDataBindingExampleComponent,
     NgforExampleComponent,
     BindingCustomizadoInputExampleComponent,
-    FuncionarioCardComponent
+    FuncionarioCardComponent,
+    BindingCustomizadoEventosExampleComponent,
+    FuncionarioFormComponent
   ],
   imports: [
     BrowserModule,

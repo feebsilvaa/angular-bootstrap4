@@ -8,6 +8,7 @@ import { PropertyBindingExampleComponent } from './property-binding-example/prop
 import { TwoWayDataBindingExampleComponent } from './two-way-data-binding-example/two-way-data-binding-example.component';
 import { NgforExampleComponent } from './ngfor-example/ngfor-example.component';
 import { BindingCustomizadoInputExampleComponent } from './binding-customizado-input-example/binding-customizado-input-example.component';
+import { BindingCustomizadoEventosExampleComponent } from './binding-customizado-eventos-example/binding-customizado-eventos-example.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'two-way-data-binding', component: TwoWayDataBindingExampleComponent },
   { path: 'ng-for-example', component: NgforExampleComponent },
   { path: 'binding-customizado-input', component: BindingCustomizadoInputExampleComponent },
+  { path: 'binding-customizado-eventos', component: BindingCustomizadoEventosExampleComponent },
 ];
 
 @NgModule({
