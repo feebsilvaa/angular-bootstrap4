@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EventBindingExampleComponent implements OnInit {
 
-  nome: string = 'Fernando';
+  nome = 'Fernando';
 
   constructor() { }
 

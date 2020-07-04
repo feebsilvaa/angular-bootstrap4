@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BindingCustomizadoInputExampleComponent implements OnInit {
 
-  nome: string = 'Fernando';
+  nome = 'Fernando';
   funcionarios: any[] = [];
-  adicionado: boolean = false;
-  ultimoId: number = 0;
+  adicionado = false;
+  ultimoId = 0;
 
   constructor() { }
 

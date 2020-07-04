@@ -19,13 +19,13 @@
 <br>
 <div class="container lista-funcionarios">
   <div class="row controles">
-    <button type="submit" class="btn btn-primary" 
-      [disabled]="funcionarios.length === 0" 
+    <button type="submit" class="btn btn-primary"
+      [disabled]="funcionarios.length === 0"
       (click)="limparLista()">Limpar Lista</button>
   </div>
   <div class="row">
     <div class="col-2" *ngFor="let func of funcionarios">
-      <app-funcionario-card [func-prop]="func"></app-funcionario-card>
+      <app-funcionario-card [funcionario]="func"></app-funcionario-card>
     </div>
   </div>
 </div>

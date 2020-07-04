@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FuncionarioCardComponent implements OnInit {
 
-  @Input('func-prop') funcionario: any = {};
+  @Input() funcionario: any = {};
 
   constructor() { }
 
